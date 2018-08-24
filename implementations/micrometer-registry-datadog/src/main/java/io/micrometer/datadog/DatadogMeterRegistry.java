@@ -126,7 +126,7 @@ public class DatadogMeterRegistry extends StepMeterRegistry {
                     int status = con.getResponseCode();
 
                     if (status >= 200 && status < 300) {
-                        logger.info("successfully sent " + batch.size() + " metrics to datadog");
+                        logger.debug("Successfully sent {} metrics to Datadog.", batch.size());
                     } else if (status >= 400) {
                         try (InputStream in = con.getErrorStream()) {
                             logger.error("failed to send metrics: " + new BufferedReader(new InputStreamReader(in))
