@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/micrometer
     environment:
-      GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx2048m -XX:+HeapDumpOnOutOfMemoryError"'
+      GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx3072m -XX:+HeapDumpOnOutOfMemoryError"'
     docker:
       - image: circleci/openjdk:11-jdk
     steps:
@@ -42,7 +42,7 @@ jobs:
   deploy:
     working_directory: ~/micrometer
     environment:
-      GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx2048m -XX:+HeapDumpOnOutOfMemoryError"'
+      GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx3072m -XX:+HeapDumpOnOutOfMemoryError"'
     docker:
       - image: circleci/openjdk:11-jdk
     steps:
