@@ -8,5 +8,11 @@ dependencies {
     compile 'com.github.tomakehurst:wiremock:latest.release'
     compile 'org.mockito:mockito-core:latest.release'
 
+    compile 'org.testcontainers:testcontainers:latest.release'
+    compile 'org.testcontainers:junit-jupiter:latest.release'
+
+    compile 'com.jayway.jsonpath:json-path:latest.release'
+
     testCompile 'org.jsr107.ri:cache-ri-impl:1.0.0'
+    testCompile 'org.testcontainers:elasticsearch:latest.release'
 }
