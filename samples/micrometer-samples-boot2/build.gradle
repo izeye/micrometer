@@ -1,9 +1,13 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.3.0.RELEASE'
+    id "io.spring.dependency-management" version "1.0.9.RELEASE"
 }
 
-apply plugin: 'io.spring.dependency-management'
+dependencyManagement {
+    imports {
+        mavenBom 'org.springframework.boot:spring-boot-dependencies:2.3.0.RELEASE'
+    }
+}
 
 dependencies {
     implementation project(":micrometer-core")
