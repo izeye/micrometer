@@ -148,6 +148,8 @@ See the https://prometheus.io/docs/querying/basics[Prometheus docs] for a far mo
 
 A publicly available Grafana dashboard for Micrometer-sourced JVM and Tomcat metrics is available https://grafana.com/grafana/dashboards/4701-jvm-micrometer/[here].
 
+NOTE: The dashboard is maintained in an external GitHub repository https://github.com/mweirauch/grafana-dashboards[here], so if you have an issue, it should be created in the GitHub repository.
+
 image::implementations/prometheus-dashboard.png[Grafana dashboard for JVM and Tomcat binders]
 
 The dashboard features:
